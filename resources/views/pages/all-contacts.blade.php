@@ -36,7 +36,7 @@
         <td> 
             <a href="{{URL::to('edit-contact/'.$value->id)}}" class="btn btn-info">Edit</a>
             <a href="{{URL::to('delete-contact/'.$value->id)}}" class="btn btn-danger">Delete</a>
-            <a href="" class="btn btn-primary">View</a>
+            <a href="{{URL::to('view-contact/'.$value->id)}}" class="btn btn-primary">View</a>
         </td>
         </tr>
         @endforeach

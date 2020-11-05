@@ -1,0 +1,1 @@
+Name : {{$view->name}}

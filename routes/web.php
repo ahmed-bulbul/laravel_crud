@@ -30,5 +30,5 @@ Route::post('/data-added', [ContactController::class, 'DataAdded']);
 Route::get('/edit-contact/{id}', [ContactController::class, 'EditContact']);
 Route::get('/delete-contact/{id}', [ContactController::class, 'DeleteContact']);
 Route::post('/update-contact/{id}', [ContactController::class, 'UpdateContact']);
-
+Route::get('/view-contact/{id}', [ContactController::class, 'ViewContact']);
 

@@ -49,4 +49,8 @@ class ContactController extends Controller
         $updt= DB::table('contacts')->where('id',$id)->update($data);
         return Redirect()->route('contacts');
     }
+    public function ViewContact($id){
+        $view = DB::table('contacts')->where('id',$id)->first();
+        return view('pages.view',compact('view'));
+    }
 }
